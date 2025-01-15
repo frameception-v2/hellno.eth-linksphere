@@ -1,6 +1,6 @@
 export async function GET() {
   const appUrl = process.env.NEXT_PUBLIC_URL || process.env.VERCEL_URL;
-
+  console.log('appUrl', appUrl)
   const config = {
     accountAssociation: {
       header: "eyJmaWQiOiA4ODcyNDYsICJ0eXBlIjogImN1c3RvZHkiLCAia2V5IjogIjB4N0Q0MDBGRDFGNTkyYkI0RkNkNmEzNjNCZkQyMDBBNDNEMTY3MDRlNyJ9",
