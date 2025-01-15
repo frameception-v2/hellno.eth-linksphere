@@ -1,9 +1,5 @@
 export async function GET() {
-  const appUrl = process.env.NEXT_PUBLIC_URL || process.env.VERCEL_URL;
-  console.log('appUrl', appUrl);
-  console.log('VERCEL_URL', process.env.VERCEL_URL);
-  console.log('VERCEL_PROJECT_PRODUCTION_URL', process.env.VERCEL_PROJECT_PRODUCTION_URL);
-  
+  const appUrl = process.env.NEXT_PUBLIC_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL;
   const config = {
     accountAssociation: {
       header: "eyJmaWQiOiA4ODcyNDYsICJ0eXBlIjogImN1c3RvZHkiLCAia2V5IjogIjB4N0Q0MDBGRDFGNTkyYkI0RkNkNmEzNjNCZkQyMDBBNDNEMTY3MDRlNyJ9",
