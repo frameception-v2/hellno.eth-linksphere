@@ -118,6 +118,40 @@ export default function Frame(
     >
       <div className="w-[300px] mx-auto py-2 px-2">
         <h1 className="text-2xl font-bold text-center mb-4">{title}</h1>
+        
+        <div className="space-y-2">
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://warpcast.com/hellno")}
+            className="w-full"
+          >
+            🟣 Farcaster
+          </PurpleButton>
+          
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://github.com/hellno")}
+            className="w-full"
+          >
+            🐙 GitHub
+          </PurpleButton>
+          
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://twitch.tv/hellnotv")}
+            className="w-full"
+          >
+            📺 Twitch
+          </PurpleButton>
+          
+          <PurpleButton
+            onClick={() => sdk.actions.openUrl("https://twitter.com/hellno")}
+            className="w-full"
+          >
+            🐦 Twitter
+          </PurpleButton>
+        </div>
+        
+        <div className="mt-4 text-center text-sm text-neutral-500">
+          Built with 💜 by hellno.eth
+        </div>
       </div>
     </div>
   );
