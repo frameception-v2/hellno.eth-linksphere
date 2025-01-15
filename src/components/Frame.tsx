@@ -141,12 +141,6 @@ export default function Frame(
             📺 Twitch
           </PurpleButton>
           
-          <PurpleButton
-            onClick={() => sdk.actions.openUrl("https://twitter.com/hellno")}
-            className="w-full"
-          >
-            🐦 Twitter
-          </PurpleButton>
         </div>
         
         <div className="mt-4 text-center text-sm text-neutral-500">
